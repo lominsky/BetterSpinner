@@ -21,7 +21,7 @@ function setup() {
   label = createP('Enter Values:');
   label.position(25, 25);
 
-  input = createInput('');
+  input = createInput('Alpha, Bravo, Charlie, Delta, Echo, Foxtrot, Golf, Hotel, India, Juliet, Kilo, Lima, Mike, November, Oscar, Papa, Quebec, Romeo, Sierra, Tango, Uniform, Victor, Whisky, X-Ray, Yankee, Zulu');
   input.position(25, 60);
 
   button = createButton('Generate');
@@ -181,12 +181,6 @@ function keyPressed() {
 
     selected = -1;
     hasSpun = false;
-  } else if(keyCode == DOWN_ARROW) {
-    spinnerAngle++;
-    console.log(floor((360-spinnerAngle)/90));
-  } else if(key == 'S') {
-    tickSound.setVolume(0.5);
-    tickSound.play();
   }
 }
 
