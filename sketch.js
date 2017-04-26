@@ -151,7 +151,7 @@ function drawSelector() {
   else
     rotate(0);
   if(spinnerSpeed != 0) {
-    if(spinnerAngle%6 == 0) {
+    if(floor(spinnerAngle)%6 == 0) {
       tickSound.setVolume(0.1);
       tickSound.play();
     }
