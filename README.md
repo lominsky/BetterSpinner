@@ -1,0 +1,2 @@
+# BetterSpinner
+An improved spinner
