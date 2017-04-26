@@ -11,7 +11,7 @@ var hasSpun = false;
 var tickSound;
 
 function preload() {
-  tickSound = loadSound('./tick.aiff');
+  tickSound = loadSound('./tick.m4a');
 }
 
 function setup() {
