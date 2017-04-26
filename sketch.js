@@ -154,6 +154,8 @@ function drawSelector() {
     if(floor(spinnerAngle)%6 == 0) {
       tickSound.setVolume(0.1);
       tickSound.play();
+    } else if(floor(spinnerAngle)%6 == 5) {
+      tickSound.stop();
     }
   }
   beginShape();
