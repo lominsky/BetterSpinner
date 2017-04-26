@@ -150,6 +150,12 @@ function drawSelector() {
     rotate(-1*radians(spinnerAngle%6));
   else
     rotate(0);
+  if(spinnerSpeed != 0) {
+    if(spinnerAngle%6 == 0) {
+      tickSound.setVolume(0.1);
+      tickSound.play();
+    }
+  }
   beginShape();
   vertex(radius / 12.7, -1 * radius / 21);
   vertex(radius / 12.7, radius / 21);
