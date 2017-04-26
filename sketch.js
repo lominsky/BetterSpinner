@@ -113,7 +113,7 @@ function drawCircle() {
   rotate(radians(spinnerAngle));
   //Write Names
   textAlign(CENTER);
-  textSize(32);
+  textSize(radius/10.54);
   for(var i = 0; i < num; i++) {
     var rad3 = radians((360*(i+1)/num + 360*i/num)/2 + 3);
     push();
