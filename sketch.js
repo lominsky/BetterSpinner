@@ -21,7 +21,7 @@ function setup() {
   label = createP('Enter Values:');
   label.position(25, 25);
 
-  input = createInput('a,b,c');
+  input = createInput('');
   input.position(25, 60);
 
   button = createButton('Generate');
