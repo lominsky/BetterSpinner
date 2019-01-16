@@ -21,7 +21,17 @@ function setup() {
   label = createP('Enter Values:');
   label.position(25, 25);
 
-  input = createInput('Alpha, Bravo, Charlie, Delta, Echo, Foxtrot, Golf, Hotel, India, Juliet, Kilo, Lima, Mike, November, Oscar, Papa, Quebec, Romeo, Sierra, Tango, Uniform, Victor, Whisky, X-Ray, Yankee, Zulu');
+  var defaultInput = 'Alpha, Bravo, Charlie, Delta, Echo, Foxtrot, Golf, Hotel, India, Juliet, Kilo, Lima, Mike, November, Oscar, Papa, Quebec, Romeo, Sierra, Tango, Uniform, Victor, Whisky, X-Ray, Yankee, Zulu';
+  var s = location.search;
+  if(s.indexOf('?') != -1) {
+    s = s.substring(1);
+    while(s.indexOf("%20") != -1) {
+      s = s.replace("%20", " ");
+    }
+    defaultInput = s;
+  }
+
+  input = createInput(defaultInput);
   input.position(25, 60);
 
   button = createButton('Generate');
